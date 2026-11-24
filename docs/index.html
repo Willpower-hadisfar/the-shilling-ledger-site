@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Shilling Ledger — Dublin 8 to Derry (1958–1966)</title>
+  <meta name="description" content="How Nora Herlihy, Seán Forde, Séamus P. MacEoin, and John Hume outsmarted Ireland's loan sharks from Donore Avenue (1958) to Derry (1960). By William Power.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@400&family=Albert+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-nav">
+    <a class="wordmark" href="#top">The Shilling Ledger</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#ledger">Ledger</a></li>
+        <li><a href="#chapters">Chapters</a></li>
+        <li><a href="#author">Author</a></li>
+        <li><a class="nav-action" href="prologue.html">Read Prologue</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+  <section class="split-stage" aria-label="The Shilling Ledger">
+    <!-- Fixed / Sticky Portrait Stage (Left Half) -->
+    <div class="stage-fixed" aria-label="Archival atmosphere">
+      <div class="stage-frame">
+        <img id="stage-photo" src="assets/img/vault-portrait.jpg" width="1200" height="1600" alt="Monochrome vaulted hall arches evoking mid-century Irish public halls and ledgers">
+      </div>
+    </div>
+
+    <!-- Scrolling Editorial Column (Right Half) -->
+    <div class="stage-scroll">
+      <div class="stage-content">
+        <!-- Hero -->
+        <div class="hero">
+          <p class="hero-support reveal">
+            How a schoolteacher, a baker, and a civil servant outsmarted Ireland’s loan sharks from Donore Avenue in 1958 to Derry in 1960.
+          </p>
+          <h1 class="hero-monument">The Shilling Ledger</h1>
+          <div class="hero-actions reveal" data-delay="90">
+            <a class="btn-primary" href="prologue.html">Read Prologue Free</a>
+            <a class="link-secondary" href="#get-the-book">Get early access</a>
+          </div>
+        </div>
+
+        <!-- Block 1: Intro -->
+        <div class="sec-intro">
+          <h2 id="intro-head" class="sec-head reveal">A rigged market</h2>
+          <p class="intro-lead reveal" data-delay="60">
+            In 1950s Dublin and Derry, working-class poverty was engineered by predatory credit.
+          </p>
+          <p class="intro-body reveal" data-delay="100">
+            Commercial banks demanded property deeds that tenement families did not own. Licensed lenders operated up to the 39 percent threshold of the Moneylenders Act 1933, while street collectors charged a shilling in the pound each week: 260 percent simple annual interest.
+          </p>
+          <p class="intro-body reveal" data-delay="140">
+            Without a government grant or a single riot, Nora Herlihy, Seán Forde, and Séamus P. MacEoin reverse-engineered cooperative finance from Nova Scotia and built a rival ledger on Donore Avenue on 26 April 1958.
+          </p>
+        </div>
+
+        <!-- Block 2: Interactive 1958 Kitchen-Table Ledger Calculator + Diagram Frame -->
+        <div id="ledger" class="sec-ledger">
+          <h2 id="ledger-head" class="sec-head reveal">Check the math</h2>
+
+          <div class="ledger-panel reveal" data-delay="70" data-ui>
+            <div class="tab-row" role="group" aria-label="Choose a 1958 household loan amount">
+              <button type="button" class="ledger-tab" data-loan="2" aria-pressed="false">£2 Coal Loan</button>
+              <button type="button" class="ledger-tab" data-loan="5" aria-pressed="true">£5 Winter Boots</button>
+              <button type="button" class="ledger-tab" data-loan="10" aria-pressed="false">£10 Rent Arrears</button>
+              <button type="button" class="ledger-tab" data-loan="15" aria-pressed="false">£15 Emergency</button>
+            </div>
+
+            <div class="ledger-rows">
+              <div class="ledger-row">
+                <span class="ledger-lbl">Street Lender (1s per £1 / week · 260% simple)</span>
+                <span class="ledger-val" id="l-street">5s / week · £5 interest in 20 wks (£0 repaid)</span>
+              </div>
+              <div class="ledger-row">
+                <span class="ledger-lbl">Licensed Cap (Moneylenders Act 1933 · 39%)</span>
+                <span class="ledger-val" id="l-licensed">£1 19s annual interest cap</span>
+              </div>
+              <div class="ledger-row">
+                <span class="ledger-lbl">Credit Union (1% / month reducing balance)</span>
+                <span class="ledger-val" id="l-cu">~6s 6d total interest over 12 months + dividend</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="diagram-block reveal" data-delay="120">
+            <div class="tab-row" role="group" aria-label="Choose a historical diagram">
+              <button type="button" class="ledger-tab" data-diagram="assets/diagrams/01-monday-pawn-cycle.svg" data-alt="The Monday-to-Friday Pawnshop Trap in 1950s Dublin" aria-pressed="true">Pawn Cycle</button>
+              <button type="button" class="ledger-tab" data-diagram="assets/diagrams/02-shilling-in-the-pound-math.svg" data-alt="Comparison of 1933 statutory cap, shilling-in-the-pound street math, and credit union reducing balance" aria-pressed="false">Shilling Math</button>
+              <button type="button" class="ledger-tab" data-diagram="assets/diagrams/05-dublin-clones-derry-diffusion.svg" data-alt="Geographic diffusion from Dublin (1958) through Clones (1959) to Derry (1960)" aria-pressed="false">Dublin to Derry</button>
+              <button type="button" class="ledger-tab" data-diagram="assets/diagrams/06-dual-jurisdiction-statutes.svg" data-alt="Credit Union Act 1966 in the Republic and 1969/1985 statutory recognition in Northern Ireland" aria-pressed="false">1966 &amp; 1969 Acts</button>
+            </div>
+            <div class="diagram-stage">
+              <img id="diagram-preview" src="assets/diagrams/01-monday-pawn-cycle.svg" alt="The Monday-to-Friday Pawnshop Trap in 1950s Dublin" loading="lazy">
+            </div>
+            <p class="caption" id="diagram-caption">The Monday-to-Friday Pawnshop Trap in 1950s Dublin</p>
+          </div>
+        </div>
+
+        <!-- Block 3: List — Two-ended rows -->
+        <div id="chapters" class="sec-chapters">
+          <h2 id="chapters-head" class="sec-head reveal">The full ledger</h2>
+          <ul class="chapter-list reveal" data-delay="70">
+            <li class="chapter-row">
+              <span class="ch-name"><a class="ch-read" href="prologue.html">Monday Morning at the Pawnshop</a></span>
+              <span class="ch-meta">Read free</span>
+            </li>
+            <li class="chapter-row">
+              <span class="ch-name"><a class="ch-read" href="prologue.html#chapter-1">The Empty Lunchboxes</a></span>
+              <span class="ch-meta">Dublin 8</span>
+            </li>
+            <li class="chapter-row">
+              <span class="ch-name">The Night Shift and the Rulebook</span>
+              <span class="ch-meta">1954</span>
+            </li>
+
+            <li class="chapter-row group-break">
+              <span class="ch-name">Letters from Nova Scotia</span>
+              <span class="ch-meta">Antigonish</span>
+            </li>
+            <li class="chapter-row">
+              <span class="ch-name">The Weekend in Skerries</span>
+              <span class="ch-meta">Sept 1957</span>
+            </li>
+
+            <li class="chapter-row group-break">
+              <span class="ch-name">Donore Avenue</span>
+              <span class="ch-meta">26 Apr 1958</span>
+            </li>
+            <li class="chapter-row">
+              <span class="ch-name">Crossing the Border</span>
+              <span class="ch-meta">Clones 1959</span>
+            </li>
+
+            <li class="chapter-row group-break">
+              <span class="ch-name">Eight Pounds Ten Shillings</span>
+              <span class="ch-meta">16 Oct 1960</span>
+            </li>
+            <li class="chapter-row">
+              <span class="ch-name">The Quiet Revolution</span>
+              <span class="ch-meta">ILCU 1960</span>
+            </li>
+            <li class="chapter-row">
+              <span class="ch-name">The Ledger Lives On</span>
+              <span class="ch-meta">1966 &amp; 1969</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Block 4: About — Author's note -->
+        <div id="author" class="sec-about">
+          <h2 id="about-head" class="sec-head reveal">Source discipline</h2>
+          <div class="about-photo reveal" data-delay="40">
+            <img src="assets/img/stone-facade.jpg" width="1600" height="1000" alt="Monochrome angular stonework evoking institutional permanence" loading="lazy" decoding="async">
+          </div>
+          <p class="reveal" data-delay="60">
+            Every date, statute, biographical fact, and quotation in The Shilling Ledger traces to a verified Source Bank entry, from the Moneylenders Act 1933 and Dictionary of Irish Biography to John Hume’s 2002 Academy of Achievement interview.
+          </p>
+          <p class="reveal" data-delay="110">
+            Where an archival ledger remains uninspected, such as the exact pound value of Donore Avenue’s first character loan, the manuscript flags the gap transparently rather than inventing a convenient figure.
+          </p>
+          <p class="author-sign reveal" data-delay="150">
+            William Power · Powerworks Global
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Full-bleed CTA breaking the split -->
+  <section id="get-the-book" class="sec-cta" aria-labelledby="cta-head">
+    <img class="cta-bg" src="assets/img/arched-bridge.jpg" width="1600" height="1000" alt="Monochrome arched bridge spanning still water" loading="lazy" decoding="async">
+    <div class="cta-inner">
+      <h2 id="cta-head" class="cta-head reveal">Own the ledger</h2>
+      <p class="cta-copy reveal" data-delay="70">
+        Request early access to the complete narrative history and verified Source Bank, or read the Prologue and Chapter One free.
+      </p>
+      <form id="sl-access-form" class="cta-form reveal" data-delay="120" novalidate>
+        <label for="sl-access-email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
+        <input id="sl-access-email" class="cta-input" type="email" name="email" placeholder="you@domain.com" autocomplete="email" required>
+        <button type="submit" class="btn-primary">Get early access</button>
+        <p id="sl-access-status" class="cta-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  </main>
+
+  <!-- Section 6: Split Footer — Photograph half, menu half -->
+  <footer class="site-footer">
+    <div class="footer-photo">
+      <img src="assets/img/stairwell-light.jpg" width="1600" height="1000" alt="Daylight falling through an architectural opening onto stone stairs" loading="lazy" decoding="async">
+    </div>
+    <div class="footer-menu-half">
+      <p class="footer-wordmark">The Shilling Ledger</p>
+      <ul class="footer-menu">
+        <li><a href="prologue.html">Read Prologue</a></li>
+        <li><a href="https://willpower-hadisfar.github.io/elemental-architect-site/">The Elemental Architect</a></li>
+        <li><a href="https://willpower-hadisfar.github.io/dora-handbook-site/">DORA Handbook</a></li>
+        <li><a href="https://willpower-hadisfar.github.io/ai-sdlc-site/">AI SDLC Done Right</a></li>
+        <li><a href="https://willpower-hadisfar.github.io/routeone-cloud-site/">RouteOne Cloud</a></li>
+      </ul>
+      <div class="footer-meta">
+        <span>© 2026 William Power · Powerworks Global</span>
+        <span>Atmosphere photography via Unsplash/Picsum (Jeff Sheldon, Matthew Wiebe, Carl Nenzen Loven, Todd Quackenbush).</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
